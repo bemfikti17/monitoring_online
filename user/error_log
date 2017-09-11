@@ -1,0 +1,7 @@
+[22-Jul-2017 19:49:19 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/jende731/public_html/monitoring.bemfikti/pages/conf/conn.php on line 7
+[22-Jul-2017 19:51:51 Asia/Jakarta] PHP Warning:  mysqli::mysqli(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/jende731/public_html/monitoring.bemfikti/pages/conf/conn.php on line 7
+[23-Jul-2017 10:56:22 Asia/Jakarta] PHP Warning:  Division by zero in /home/jende731/public_html/monitoring.bemfikti/user/detail.php on line 84
+[23-Jul-2017 11:17:18 Asia/Jakarta] PHP Warning:  Division by zero in /home/jende731/public_html/monitoring.bemfikti/user/detail.php on line 84
+[23-Jul-2017 11:17:18 Asia/Jakarta] PHP Warning:  Division by zero in /home/jende731/public_html/monitoring.bemfikti/user/detail.php on line 84
+[23-Jul-2017 11:18:50 Asia/Jakarta] PHP Warning:  Division by zero in /home/jende731/public_html/monitoring.bemfikti/user/detail.php on line 84
+[23-Jul-2017 11:20:50 Asia/Jakarta] PHP Warning:  Division by zero in /home/jende731/public_html/monitoring.bemfikti/user/detail.php on line 84
