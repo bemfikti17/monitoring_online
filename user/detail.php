@@ -65,14 +65,16 @@ div.tab button.active {
             $act = $_GET['act'];
             $id = $_GET['id'];
 
-            $sql = $conn->prepare("SELECT * FROM list_proker WHERE id_proker='$id' and divisi='$act'");
+            $sql = $conn->prepare("SELECT * FROM list_proker WHERE id_proker=? and divisi=?");
+            $sql->bind_param("ss",$id,$act);
             $sql->execute();
             $result=$sql->get_result();
 
             //hitung
             $jml_o = 0;
-            $q = "SELECT * FROM objektif WHERE id_proker='$id'";
+            $q = "SELECT * FROM objektif WHERE id_proker=?";
             $que = $conn->prepare($q);
+            $que->bind_param("s",$id);
             $que->execute();
             $var_hasil=$que->get_result();
             $i = 0;

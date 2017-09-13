@@ -10,7 +10,7 @@ ob_start();
   <title>Monitoring Online | Log in</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../user/assets/img/apple-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png">
   <link rel="icon" type="image/png" href="/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Monitoring Online | Registration Page</title>
+  <title>Monitoring Online | BEM FIKTI UG</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -32,7 +32,7 @@
   </div>
   <div class="register-box-body">
     <?php include ('include/regis-ketuplak.php') ?>
-    <a href="login.php" class="text-center">I already have a membership</a>
+    <a href="login.php" class="text-center">Saya sudah mendaftar</a>
   </div>
   <!-- /.form-box -->
 </div>

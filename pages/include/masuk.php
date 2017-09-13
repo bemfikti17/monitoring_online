@@ -22,7 +22,7 @@
 		        		if ($stat == 0) {
 		        			echo '
 				        		<div class="alert alert-warning">
-			                		Akun anda belum di verifikasi, silakan hubungi admin atau ketua departemen anda !
+			                		Akun anda belum di verifikasi, silakan hubungi admin atau kepala bagian/biro/departemen anda !
 			                	</div>
 		        			';
 		        		}else{
@@ -47,7 +47,7 @@
 		        	}else{
 		        		echo '
 		        		<div class="alert alert-danger">
-	                		Password Salah
+	                		Password Salah :(
 	                	</div>
 		        		';
 		        	}

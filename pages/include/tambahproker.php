@@ -1,4 +1,8 @@
 <?php
+function kanan($st, $p) {
+  return(substr($st, -$p));
+}
+
   if(isset($_POST['save'])){
     //deklarasi variabel
     $proker = $_POST['nama-proker'];
@@ -12,16 +16,24 @@
     $p_penilaian = 0;
 
     // Ambil Data Gambar yang Dikirim dari Form
-    $nama_file = $_FILES['gambar']['name'];
+    //$nama_file = $_FILES['gambar']['name'];
+    $bytes = openssl_random_pseudo_bytes(20, $cstrong);
+    $hasil_hex   = bin2hex($bytes);
+    
     $ukuran_file = $_FILES['gambar']['size'];
     $tipe_file = $_FILES['gambar']['type'];
+    $nama_file = $hasil_hex . "." .kanan($_FILES['gambar']['name'],3) ;
     $tmp_file = $_FILES['gambar']['tmp_name'];
     // Set path folder tempat menyimpan gambarnya
     $path = $_SERVER['DOCUMENT_ROOT']."/user/assets/img/logo/".$nama_file;
     if($tipe_file == "image/jpeg" || $tipe_file == "image/png"){ // Cek apakah tipe file yang diupload adalah JPG / JPEG / PNG
       // Jika tipe file yang diupload JPG / JPEG / PNG, lakukan :
-      if($ukuran_file <= 1000000){ // Cek apakah ukuran file yang diupload kurang dari sama dengan 1MB
-        // Jika ukuran file kurang dari sama dengan 1MB, lakukan :
+      $cekidot = getimagesize($_FILES["gambar"]["tmp_name"]);
+    if($cekidot === false) {
+        goto yah;
+    }
+      if($ukuran_file <= 5000000){ // Cek apakah ukuran file yang diupload kurang dari sama dengan 5MB
+        // Jika ukuran file kurang dari sama dengan 5MB, lakukan :
         // Proses upload
         if(move_uploaded_file($tmp_file, $path)){ // Cek apakah gambar berhasil diupload atau tidak
           // Jika gambar berhasil diupload, Lakukan :  
@@ -41,6 +53,7 @@
               </div>';
             echo "<meta http-equiv=\"refresh\" content=\"1;url=index.php\"/>";
           }else{
+            yah:
             // Jika Gagal, Lakukan :
             echo "$conn->error";
             echo '
@@ -91,25 +104,23 @@
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-sm-2 control-label">Proker Bidang</label>
+                  <label class="col-sm-2 control-label">Lingkup</label>
                   <div class="col-sm-10">
                     <select name="bidang" class="form-control select2" style="width: 100%;" required>
-                      <option value="" selected disabled>Bidang</option>
-                      <option value="Bidang 1">Bidang 1</option>
-                      <option value="Bidang 2">Bidang 2</option>
-                      <option value="Bidang 3">Bidang 3</option>
-                      <option value="Bidang 4">Bidang 4</option>
+                      <option value="" selected disabled>Bagian/Biro/Departemen</option>
+                      <option value="Bagian">Bagian</option>
+                      <option value="Biro">Biro</option>
+                      <option value="Departemen">Departemen</option>
+                      
                     </select>
                   </div>  
                 </div>
                 <div class="form-group">
-                  <label class="col-sm-2 control-label">Departemen/Biro</label>
+                  <label class="col-sm-2 control-label">Departemen/Biro/Bagian</label>
                   <div class="col-sm-10">
                     <select name="divisi" class="form-control select2" style="width: 100%;" required>
-                      <option value="" selected disabled>Dep/Biro</option>
+                      <option value="" selected disabled>Dep/Biro/Bag</option>
                       <option value="akademik">Departemen Akademik</option>
-                      <option value="psdm">Departemen PSDM</option>
-                      <option value="kewirausahaan">Departemen Kewirausahaan</option>
                       <option value="kesma">Departemen Kesejahteraan Mahasiswa</option>
                       <option value="pengmas">Departemen Pengabdian Masyarakat</option>
                       <option value="olahraga">Departemen Olahraga</option>
@@ -117,6 +128,11 @@
                       <option value="media">Biro Media</option>
                       <option value="humas">Biro Hubungan Masyarakat</option>
                       <option value="pti">Biro Pengembangan Teknologi Informasi</option>
+                      <option value="psdm">Biro Sumber Daya Manusia</option>
+                      <option value="litbang">Biro Penelitian dan Pengembangan</option>
+                      <option value="bismit">Biro Bisnis dan Kemitraan (treasurer)</option>
+                      <option value="keuangan">Bagian Keuangan</option>
+                      <option value="kestari">Bagian Kesekretariatan</option>
                     </select>
                   </div>  
                 </div>

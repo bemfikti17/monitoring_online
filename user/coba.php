@@ -24,10 +24,10 @@ include "../pages/conf/conn.php";
       </div>
 
       <div class="panel panel-primary" style="height: 300px;">
-        <div class="panel-heading">KEWIRAUSAHAAN</div>
+        <div class="panel-heading">BISMIT</div>
 
         <?php
-         $q = "SELECT * FROM list_proker WHERE divisi='kewirausahaan'";
+         $q = "SELECT * FROM list_proker WHERE divisi='keuangan'";
             $que = $conn->prepare($q);
             $que->execute();
             $var_hasil=$que->get_result();
@@ -41,7 +41,7 @@ include "../pages/conf/conn.php";
       </div>
 
       <div class="panel panel-primary" style="height: 300px;">
-        <div class="panel-heading">PSDM</div>
+        <div class="panel-heading">SDM</div>
 
         <?php
          $q = "SELECT * FROM list_proker WHERE divisi='psdm'";
@@ -158,6 +158,59 @@ include "../pages/conf/conn.php";
             ?>
       </div>
     </div>
+    
+    <div class="panel panel-primary" style="height: 300px;">
+        <div class="panel-heading">LITBANG</div>
+
+        <?php
+         $q = "SELECT * FROM list_proker WHERE divisi='keuangan'";
+            $que = $conn->prepare($q);
+            $que->execute();
+            $var_hasil=$que->get_result();
+            while($res=$var_hasil->fetch_array()){
+        ?>
+            <div class="panel-body">
+            <a href="?menu=detail&act=kewirausahaan&id=<?=$res['id_proker'];?>"><?=$res['nama_proker'];?></a>
+            </div>
+            <?php }
+            ?>
+      </div>
+
+      <div class="panel panel-primary" style="height: 300px;">
+        <div class="panel-heading">KEUANGAN</div>
+
+        <?php
+         $q = "SELECT * FROM list_proker WHERE divisi='keuangan'";
+            $que = $conn->prepare($q);
+            $que->execute();
+            $var_hasil=$que->get_result();
+            while($res=$var_hasil->fetch_array()){
+        ?>
+            <div class="panel-body">
+            <a href="?menu=detail&act=kewirausahaan&id=<?=$res['id_proker'];?>"><?=$res['nama_proker'];?></a>
+            </div>
+            <?php }
+            ?>
+      </div>
+      
+      <div class="col-md-4">
+      <div class="panel panel-primary" style="height: 300px;">
+        <div class="panel-heading">KESTARI/div>
+
+        <?php
+         $q = "SELECT * FROM list_proker WHERE divisi='keuangan'";
+            $que = $conn->prepare($q);
+            $que->execute();
+            $var_hasil=$que->get_result();
+            while($res=$var_hasil->fetch_array()){
+        ?>
+            <div class="panel-body">
+            <a href="?menu=detail&act=kewirausahaan&id=<?=$res['id_proker'];?>"><?=$res['nama_proker'];?></a>
+            </div>
+            <?php }
+            ?>
+      </div>
+      </div>
 
     <div class="col-md-4">
       <div class="panel panel-primary" style="height: 300px;">
@@ -176,6 +229,11 @@ include "../pages/conf/conn.php";
             ?>
       </div>
 </div>
+    
+        
+
+  
+    
     
   </div>
 </div>

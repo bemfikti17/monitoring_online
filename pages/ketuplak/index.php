@@ -57,13 +57,13 @@
         <ul class="nav navbar-nav">
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="../../dist/img/gambar.png" class="user-image" alt="User Image">
               <span class="hidden-xs"><?php echo "$nama"; ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="../../dist/img/gambar.png" class="img-circle" alt="User Image">
 
                 <p>
                   <?php echo "$nama"; ?>
@@ -95,7 +95,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="../../dist/img/gambar.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p><?php echo "$nama"; ?></p>
@@ -160,9 +160,9 @@
 
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 1.28.04.17
+      <b>Version</b> 1.02
     </div>
-    <strong>Copyright &copy; 2017 <a href="http://fikti.bem.gunadarma.ac.id/" target="_blank">BEM FIKTI Universitas Gunadarma</a>.</strong> All rights
+    <strong>Maintained By BIRO PTI &copy; 2016-2018 <a href="http://fikti.bem.gunadarma.ac.id/" target="_blank">BEM FIKTI Universitas Gunadarma</a>.</strong> All rights
     reserved.
   </footer>
 </div>

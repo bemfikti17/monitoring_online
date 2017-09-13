@@ -114,9 +114,7 @@
 							</div>
 							<div class="content">
 								<div class="tab-content text-center">
-									<div class="tab-pane" id="proker">
-										<p><?php include "coba.php";?></p>
-									</div>
+									
 									<div class="tab-pane active" id="profile">
 										<div class="row">
 											<?php 
@@ -132,14 +130,14 @@
 												include "akademik.php";
 												break;
 
-												case "kewirausahaan";
-												include "kewirausahaan.php";
+												case "bismit";
+												include "bismit.php";
 												break;
 
-												case "psdm";
-												include "psdm.php";
+												case "sdm";
+												include "sdm.php";
 												break;
-
+												
 												case "kesma";
 												include "kesma.php";
 												break;
@@ -175,12 +173,28 @@
 												case "proker";
 												include "coba.php";
 												break;
+												
+												case "keuangan";
+												include "keuangan.php";
+												break;
+												
+												case "kesekretariatan";
+												include "kestari.php";
+												break;
+												
+												case "litbang";
+												include "litbang.php";
+												break;
 
 											}
 										?>
 						                </div>
 						             </div>   
 						               
+							       
+							       <div class="tab-pane" id="proker">
+										<p><?php include "coba.php";?></p>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -234,7 +248,7 @@
 
 		});
 	</script>
-	<?php require_once( $_SERVER['DOCUMENT_ROOT']  . "/analisis.php");?>
+	<?php //require_once( $_SERVER['DOCUMENT_ROOT']  . "/analisis.php");?>
 	
 	</body>
 </html>

@@ -120,14 +120,14 @@
 						                    	    </a>
 						                    </div>
 											<div class="col-sm-3 ">
-						                    		<a href="?menu=kewirausahaan" class="btn btn-white btn-lg">
-														<h4>Kewirausahaan</h4>
+						                    		<a href="?menu=bismit" class="btn btn-white btn-lg">
+														<h4>BISMIT</h4>
 						                    	    	<img src="assets/img/ico/KW.png" alt="Rounded Image" class="img-rounded img-responsive">
 						                    	    </a>
 						                    </div>
 											<div class="col-sm-3 ">
-						                    		<a href="?menu=psdm" class="btn btn-white btn-lg">
-														<h4>PSDM</h4>
+						                    		<a href="?menu=sdm" class="btn btn-white btn-lg">
+														<h4>SDM</h4>
 						                    	    	<img src="assets/img/ico/PSDM.png" alt="Rounded Image" class="img-rounded img-responsive">
 						                    	    </a>
 						                    </div>
@@ -176,15 +176,13 @@
 						                    	    </a>
 						                    </div>										
 											
-						                    
-											
 											   
 						                </div>
 						             </div>   
 						                <div class="row">
 									</div>
 									<div class="tab-pane" id="messages">
-										<p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
+										<p> Meong.</p>
 									</div>
 									
 								</div>

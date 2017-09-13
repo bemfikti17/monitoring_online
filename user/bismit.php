@@ -68,7 +68,7 @@
 	                		<td align="center">
 
 	                		<?php
-	                			  $query = $conn->prepare('SELECT * FROM list_proker WHERE divisi="kewirausahaan"');
+	                			  $query = $conn->prepare('SELECT * FROM list_proker WHERE divisi="keuangan"');
 						          $query->execute();
 						          $result=$query->get_result();
 						          $jumrow=$result->num_rows;

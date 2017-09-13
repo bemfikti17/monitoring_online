@@ -1,4 +1,5 @@
 <?php
+          date_default_timezone_set("Asia/Jakarta");
    include('../conf/conn.php');
    session_start();
    	
@@ -39,9 +40,9 @@
     if ($lvl == 0) {
     	$status = "Super Admin";
     }else if ($lvl == 1) {
-    	$status = "Manajemen Kontrol";
+    	$status = "BPH/Manajemen Kontrol";
     }else if ($lvl == 2) {
-    	$status = "Ketua Departemen";
+    	$status = "Ketua Departemen/Biro/Bagian";
     }else if ($lvl == 3) {
     	$status = "Ketua Pelaksana";
     }
