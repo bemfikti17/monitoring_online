@@ -1,10 +1,10 @@
-<?php // error_reporting(0);?>
+
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-	<link rel="icon" type="image/png" href="assets/img/favicon.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon.png">
+	<link rel="icon" type="image/png" href="/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	<!-- All CSS Plugins -->
     <link rel="stylesheet" type="text/css" href="assets/template2/css/plugin.css">
@@ -31,6 +31,7 @@
 </head>
 
 <body class="index-page">
+	
 <!-- Navbar -->
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
 	<div class="container">
@@ -98,7 +99,7 @@
 											<li class="">
 												<a href="depan.php" >
 													<i class="material-icons">face</i>
-													Biro & Departemen
+													Bagian, Biro & Departemen
 												</a>
 											</li>
 											<li>
@@ -194,7 +195,7 @@
     <footer class="footer">
 	    <div class="container">
 	        <div class="copyright pull-right">
-	            Copyright &copy; 2016 - Biro Media BEM FIKTI UG | Maintained by Biro PTI BEM FIKTI
+	            Copyright &copy; 2016 - 2018 Biro Media BEM FIKTI UG | Maintained by Biro PTI BEM FIKTI
 	        </div>
 	    </div>
 	</footer>
@@ -203,7 +204,7 @@
 
 
 
-</body>
+
 	<!--   Core JS Files   -->
 	<script src="assets/js/jquery.min.js" type="text/javascript"></script>
 	<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
@@ -233,4 +234,7 @@
 
 		});
 	</script>
+	<?php require_once( $_SERVER['DOCUMENT_ROOT']  . "/analisis.php");?>
+	
+	</body>
 </html>

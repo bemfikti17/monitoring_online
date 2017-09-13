@@ -2,6 +2,7 @@
 ob_start();
 ?>
 <!DOCTYPE html>
+<!-- PTI banget -->
 <html>
 <head>
   <meta charset="utf-8">
@@ -10,7 +11,7 @@ ob_start();
   <!-- Tell the browser to be responsive to screen width -->
   <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="../user/assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../user/assets/img/favicon.png">
+  <link rel="icon" type="image/png" href="/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
   <title>Login - Monitoring Online</title>
@@ -40,7 +41,7 @@ ob_start();
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="http://monitoring.bemfikti.jendela360.id/">
+        <a href="/monitoring">
             <div class="logo-container">
                   <div class="logo">
                       <img src="../user/assets/img/logo.png" alt="Creative Tim Logo" rel="tooltip" title="<b>BEM FIKTI</b>" data-placement="bottom" data-html="true">
@@ -98,7 +99,7 @@ ob_start();
       <footer class="footer">
             <div class="container">
                 <div class="copyright pull-right">
-                    Copyright &copy; 2016 - Biro Media BEM FIKTI UG | Maintained by Biro PTI BEM FIKTI
+                    Copyright &copy; 2016 -2018 Biro Media BEM FIKTI UG | Maintained by Biro PTI BEM FIKTI
                 </div>
             </div>
         </footer>
@@ -108,10 +109,10 @@ ob_start();
     </div>
 
 
-</body>
+
 
 <!-- jQuery 2.2.3 -->
-<script src="../user/assets/js/jquery.min.js" type="text/javascript"></script>
+ <script src="../user/assets/js/jquery.min.js"></script>
   <script src="../user/assets/js/bootstrap.min.js" type="text/javascript"></script>
   <script src="../user/assets/js/material.min.js"></script>
 
